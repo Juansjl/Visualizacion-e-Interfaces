@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KingWorm</title>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-3 offset-md-1">
+          <div class="logo">
+            <img src="css/logo.png"  alt="#">
+          </div>
+        </div>
+        <div class="col-md-6 offset-md-1">
+            <div class="input-group mb-3 buscador">
+                <input type="text" class="form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-1">
+            <div class="banner">
+              <img src="css/Banner.png"  alt="#">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="icon">
+                <img src="css/avatar.png"  alt="#">
+                <img src="css/tienda.png"  alt="#">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-1 offset-md-1">
+            <div class="icon3">
+                <img src="css/plus.png"  alt="#">
+              </div>
+            </div>
+            <div class="col-md-8">
+                <ul class="nav justify-content-center mr-auto">
+                  <li class="nav-item">
+                    <a class= "nav-link active"href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class= "nav-link active"href="#">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class= "nav-link active"href="#">Comunidad</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class= "nav-link active"href="#">Soporte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="container game-Container">
+        <div class="row">
+          <div class="col-md-8 offset-md-1">
+            <div id="game">
+            </div>
+          </div>
+          <div class="col-md-2" align="center">
+              <div id="menu">
+                <button id="start" type="button" class="btn btn-success btn-sx">Jugar</button>
+
+                <h3>Puntuacion: </h3>
+                <p id="puntaje">000</p>
+                <h3>Controles: </h3>
+                <img src="css/wasd2.png" class="keysMoves" alt="controles/flechas direccionales">
+                <h5>Nro de Derrotas: </h5>
+                <p id="loses">0</p>
+                <h5>Mejor Puntuacion: </h5>
+                <p id="bestScore">0</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="hl"></div>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-2 offset-md-1">
+              <div class="logo-footer">
+                  <img src="css/logo.png"  alt="#">
+              </div>                
+            </div>
+            <div class="col-md-6">
+              <div class="Politicas">
+                  <p>Politicas de Empresa | Informacion Legal | Contacto</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>              
+              </div>
+            <div class="col-md-3">
+              <div class="icon2">
+                  <img src="css/twiter.png"  alt="#">
+                  <img src="css/instagram.png"  alt="#">
+                  <img src="css/facebook.png"  alt="#">
+              </div>
+            </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/ship.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
