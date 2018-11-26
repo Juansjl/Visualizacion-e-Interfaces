@@ -4,7 +4,7 @@ let commentId = 'textComment';
 let nombreId = 'nombre';
 let imgId = 'avatar';
 comments = '<div class= "comment"><img id=' + imgId + ' src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar"><div><h5 id=' + nombreId + '>Robert</h5><span id=' + commentId + '>I just made a comment about this comment box which is purely made from CSS.</span></div></div>';
-$("#boxComment").append(comments);
+/*$("#boxComment").append(comments);*/
 
 fetch('http://jsonplaceholder.typicode.com/users?_start=0&_limit=5')
   .then(responseUsers => responseUsers.json())

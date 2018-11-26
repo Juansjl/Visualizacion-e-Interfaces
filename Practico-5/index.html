@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav row">
         <img class="logo" src="css/images/logo.png" alt="logo">
         <ul>
             <li><a class="" href="#">Tienda</a></li>
@@ -32,7 +32,16 @@
                 <div class="BoxDescrip">
                     <h1>Quake 4</h1>
                     <div class="boxDescripText">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus viverra interdum. Duis semper auctor tortor, a facilisis quam cursus id. Pellentesque malesuada sapien et nisl porttitor, eu vestibulum leo elementum. Vestibulum imperdiet pellentesque nulla, ut volutpat dolor egestas venenatis. Proin vel tortor felis. Quisque a nunc leo. </p>
+                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus viverra interdum. Duis semper auctor tortor, a facilisis quam cursus id. Pellentesque malesuada sapien et nisl porttitor, eu vestibulum leo elementum. Vestibulum imperdiet pellentesque nulla, ut volutpat dolor egestas venenatis. Proin vel tortor felis. Quisque a nunc leo. </p>
+                        <p><span class="descripItems">Fecha de lazamiento: </span>28/10/1995</p>
+                        <p><span class="descripItems">Desarrolladora: </span>IdGames</p>
+                        <p><span class="descripItems">Raiting: </span></p>
+                    </div>
+                    <div id="stars">
+                        <img src="css/images/star.png" alt="star">
+                        <img src="css/images/star.png" alt="star">
+                        <img src="css/images/star.png" alt="star">
+                        <img src="css/images/star.png" alt="star">
                     </div>
                     <button type="button" class="btn btn-secondary">Detalles</button>
                 </div>
@@ -41,40 +50,54 @@
 
         <div class="row"> 
             <div class="col-sm-12">
-                <img class="vImages" src="css/images/c0Quake4.jpg" alt="logo">
+                <img id="ArrowL" src="css/images/ArrowL.png" alt="logo">
+                <img class="vImages" src="css/images/c00Quake4.png" alt="logo">
                 <img class="cImages" src="css/images/c1Quake4.jpg" alt="logo"> 
                 <img class="cImages" src="css/images/c2Quake4.jpg" alt="logo"> 
-                <img class="cImages" src="css/images/c3Quake4.jpg" alt="logo">  
+                <img class="cImages" src="css/images/c3Quake4.jpg" alt="logo">
+                <img id="ArrowR" src="css/images/ArrowR.png" alt="logo">
             </div>
         </div>
 
         <div class="row"> 
                 <div class="col-sm-12">
-                        <button type="button" class="btn btn-secondary">Comprar</button>
-                        <button type="button" class="btn btn-secondary">Reservar</button>
-                        <button type="button" class="btn btn-secondary">Jugar</button>
+                        <button id="bComprar" type="button" class="btn btn-secondary">Comprar</button>
+                        <button id="bResevar" type="button" class="btn btn-secondary">Reservar</button>
+                        <button id="bJugar" type="button" class="btn btn-secondary">Jugar</button>
                 </div>
             </div>
 
         <div class="row"> 
-            <div id="boxComment"></div>                   
+            <div class="col-sm-12">
+                <div id="boxComment">
+                    
+                </div>
+
                 <div class="BoxTop">
                     <p>Top</p>
                 </div>
-        </div>
-
-        <div class="row"> 
-            <div class="boxComment">
+            </div>
+            <div class="verMasC">
                 <p>Ver mas comentarios</p>
-            </div>                   
+            </div>   
         </div>
 
     </div>
 
-    <footer>
-        <img src="css/images/logo.png" alt="logo">
-        <p>Política de Empresa | Información Legal | Contacto</p>
-        <img src="css/images/social_media.png" alt="socialMedio">
+    <footer class="row ">
+        <div class="col">
+            <img class="logo"src="css/images/logo.png" alt="logo">
+        </div>
+        <div class="col">
+            <ul>
+                <li><a class="" href="#"> Política de Empresa |</a></li>
+                <li><a class="" href="#"> Información Legal |</a></li>
+                <li><a class="" href="#"> Contacto</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <img class = "socialMedia" src="css/images/social_media.png" alt="socialMedio">
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>

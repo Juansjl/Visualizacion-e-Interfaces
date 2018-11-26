@@ -2,6 +2,9 @@
     font-family: Helvetica;
 }
 
+body{
+    background: #e3e3e3;
+}
 
 nav{
     background-color: #171a21;
@@ -45,7 +48,7 @@ nav form{
 
 nav .logo{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .search{
@@ -66,9 +69,10 @@ nav .logo{
 }
 
 .comment{
-    background-color: #e3e3e3;
+    background-color: white;
     padding: 15px;
     margin: 1%;
+    width: 100%;
 }
 
 .comment img{
@@ -87,6 +91,49 @@ nav .logo{
 .BoxDescrip h1{
     background: gray;
     text-align: center;
+}
+
+
+.BoxDescrip .descrip{
+    margin: 5px;
+    text-align: center;
+}
+
+.BoxDescrip .descripItems{
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+#stars{
+    margin-left: 5px;
+}
+
+button{
+    width: 100px;
+}
+
+.BoxDescrip button{
+   margin-top: 25px;
+   margin-left: 365px;
+}
+
+#bComprar{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+#bResevar{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+#bJugar{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 50%;
 }
 
 .vImages{
@@ -109,16 +156,28 @@ nav .logo{
 .BoxTop{
     border: 2px solid black;
     width: 30%;
+    height: 400px;
+    float: right;
 }
 
-.BoxComment{
+.boxComment{
     padding-left: 2%;
-    width: 65%;
+    width: 60%;
+    
 }
 
-#BoxComment{
+#boxComment{
     width: 65%;
     float: left; 
+}
+
+.verMasC{
+    width: 64%;
+    margin-left: 2%;
+    float: left; 
+    background-color: #495057;
+    text-align: center;
+    color: white;
 }
 
 #avatar{
