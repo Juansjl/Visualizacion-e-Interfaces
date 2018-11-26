@@ -75,7 +75,7 @@ nav .logo{
     width: 70px;
     height: 70px;
     margin-right: 15px;
-    float: left; 
+    float: left;
     padding-bottom: auto;
 }
 
@@ -118,7 +118,7 @@ nav .logo{
 
 #BoxComment{
     width: 65%;
-    float: left; 
+    float: left;
 }
 
 #avatar{
@@ -145,4 +145,19 @@ nav .logo{
 footer{
     background-color: #171a21;
     color: white;
+}
+footer .logo{
+  float: left;
+  width: 200px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+}
+footer .socialMedia{
+  float: right;
+
 }
