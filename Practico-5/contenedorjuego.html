@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav row">
         <img class="logo" src="css/images/logo.png" alt="logo">
         <ul>
             <li><a class="" href="#">Tienda</a></li>
@@ -23,54 +24,116 @@
         <img id ="avatar" src="css/images/avatar.png" alt="logo">
         <img  id ="carrito" src="css/images/tienda.png" alt="logo">
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <img id="portada" src="css/images/quake4.jpg" alt="logo">
+    <div class="container play">
+          <div class="row justify-content-md-center">
+            <div class="gametittle tittle">
+                  ODDYSEY
             </div>
-            <div class="col-sm-6">
-                <div class="BoxDescrip">
-                    <h1>Quake 4</h1>
-                    <div class="boxDescripText">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus viverra interdum. Duis semper auctor tortor, a facilisis quam cursus id. Pellentesque malesuada sapien et nisl porttitor, eu vestibulum leo elementum. Vestibulum imperdiet pellentesque nulla, ut volutpat dolor egestas venenatis. Proin vel tortor felis. Quisque a nunc leo. </p>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div class="intro">
+                <div class="logoOd"></div>
+                <div class="botones row">
+                  <button id="play" type="button" name="button" class="btn2 btn-secundary col-md-2 offset-md-1">JUGAR</button>
+                  <button id="controles" type="button" name="button" class="btn2 btn-secundary col-md-2 offset-md-2">CONTROLES</button>
+                  <button id="scores" type="button" name="button" class="btn2 btn-secundary col-md-2 offset-md-2">PUNTAJES</button>
+                </div>
+                <div class="controles container">
+                  <div class="row align-items-start cc">
+                    <div class="spacebar col-3 ">
+                      <span class="st"> </span>
                     </div>
-                    <button type="button" class="btn btn-secondary">Detalles</button>
+                    <div class="arrowkeys col offset-1"> MOVIMIENTO
+
+                      </div>
+                      <div class="col">
+                        <button id="back" type="button" name="button" class="btn2 btn-secundary col">VOLVER</button>
+
+                      </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <img class="vImages" src="css/images/c0Quake4.jpg" alt="logo">
-                <img class="cImages" src="css/images/c1Quake4.jpg" alt="logo">
-                <img class="cImages" src="css/images/c2Quake4.jpg" alt="logo">
-                <img class="cImages" src="css/images/c3Quake4.jpg" alt="logo">
-            </div>
-        </div>
-
-        <div class="row">
-                <div class="col-sm-12">
-                        <button type="button" class="btn btn-secondary">Comprar</button>
-                        <button type="button" class="btn btn-secondary">Reservar</button>
-                        <button type="button" class="btn btn-secondary">Jugar</button>
+              </div>
+              <div class="main">
+                  <div class="fondo">
+                    <div class="espacio">
+                          <div class="info S"> SALVAR    </div>
+                          <div class="shipEX"> </div>
+                          <div class="info"> 100 Monedas    </div>
+                          <div class="info D"> DESTRUIR  </div>
+                          <div class="asteGrande">  </div>
+                          <div class="info AG"> 50 Monedas </div>
+                          <div class="asteChico"> </div>
+                          <div class="info AC"> 150 Monedas </div>
+                    </div>
+                    <div class="tablero">
+                      <div class="vidasN">
+                        <div class="vidas"> 3 </div>
+                      </div>
+                      <div class="coinP">
+                        <div class="puntaje"> 0 </div>
+                      </div>
+                    </div>
+                  <div   class= "nave"id="nave"></div>
+                  <div class="ast" id= "asteroide"></div>
+                  <div class="misiles"></div>
+                  <div class="ship"></div>
+                  <div class="Loss"></div>
+                  </div>
+              </div>
+              <div class="gameOver">
+                <div class="logoOd lGO "></div>
+                <div class="tablaPosi row">
+                    <div class="tP col-md" id="p0"> </div>
+                    <div class="w-100"></div>
+                    <div class="tP col-md"id="p1"> </div>
+                    <div class="w-100"></div>
+                    <div class="tP col-md"id="p2"> </div>
+                    <div class="w-100"></div>
+                    <div class="tP col-md"id="p3"> </div>
+                    <div class="w-100"></div>
+                    <div class="tP col-md"id="p4"> </div>
                 </div>
+                <div class=" offset-md-4 brk">
+                  <button id="again" type="button" name="button" class="btn2 btn-secundary col-md-3 again offset-md-1">VOLVER A JUGAR</button>
+                  <button id="menuIni" type="button" name="button" class="btn2 btn-secundary col-md-3 offset-md-1">MENU INICIO</button>
+                </div>
+
+
+              </div>
+              <div class="congratz container">
+                <h1 id="nuevoRecord">NUEVO RECORD!</h1>
+                        <div class="input-group mb-3">
+                        <input id="newName" type="text" class="form-control" placeholder="NickName" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button id="name"class="btn btn-outline-secondary" type="button">ENVIAR</button>
+                            </div>
+                        </div>
+                      <div class="logoOd newRecordLogo"></div>
+              </div>
             </div>
-
-
+          </div>
     </div>
 
-    <footer>
-      <img class="logo"src="css/images/logo.png" alt="logo">
-      <ul>
-          <li><a class="" href="#"> Política de Empresa |</a></li>
-          <li><a class="" href="#"> Información Legal |</a></li>
-          <li><a class="" href="#"> Contacto</a></li>
-      </ul>
-
-      <img class = "socialMedia" src="css/images/social_media.png" alt="socialMedio">
-
-    </footer>
+      <footer class="row ">
+          <div class="col">
+              <img class="logo"src="css/images/logo.png" alt="logo">
+          </div>
+          <div class="col">
+            <ul>
+                <li><a class="" href="#">Política de Empresa</a></li>
+                <li>|</li>
+                <li><a class="" href="#">Información Legal</a></li>
+                <li>|</li>
+                <li><a class="" href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <img class = "socialMedia" src="css/images/social_media.png" alt="socialMedio">
+          </div>
+      </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
