@@ -96,12 +96,26 @@ nav .logo{
   height: 450px;
   margin-bottom: 35px;
 }
+.portada2{
+  background-image: url('images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 1%;
+  height: 450px;
+  margin-bottom: 35px;
+}
 .comocuanto{
   background-color: #8BB006;
   text-align: center;
   color:white;
   margin-top: 80%;
-  margin-left: 70%;
+
+}
+.price{
+  color: white;
+  margin-top: 80%;
+  text-align: center;
+  background-color:#464D5C;
 }
 
 .BoxDescrip{
@@ -118,7 +132,8 @@ nav .logo{
 }
 
 .BoxDescrip h1{
-    background: gray;
+    Color : white;
+    background: #464D5C ;
     text-align: center;
 }
 
