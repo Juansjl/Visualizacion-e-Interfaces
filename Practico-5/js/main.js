@@ -1,5 +1,5 @@
 let comments;
-let cont = 0; 
+let cont = 0;
 let commentId = 'textComment';
 let nombreId = 'nombre';
 let imgId = 'avatar';
@@ -19,9 +19,9 @@ document.getElementById("moreComments").addEventListener("click", function(){
         fetch('http://jsonplaceholder.typicode.com/photos')
         .then(responsePhotos => responsePhotos.json())
         .then(function(responsePhotos){
-            fetch('http://jsonplaceholder.typicode.com/posts')  
+            fetch('http://jsonplaceholder.typicode.com/posts')
             .then(response => response.json())
-            .then(function(response){                 
+            .then(function(response){
                 for (var u = 0; u < responseUsers.length; u++) {
                 for (var i = 0; i < response.length; i++) {
                     if(responseUsers[u].id == response[i].userId){
@@ -49,9 +49,9 @@ fetch('http://jsonplaceholder.typicode.com/users?_start=' + start + '&_limit= ' 
     fetch('http://jsonplaceholder.typicode.com/photos')
     .then(responsePhotos => responsePhotos.json())
     .then(function(responsePhotos){
-        fetch('http://jsonplaceholder.typicode.com/posts')  
+        fetch('http://jsonplaceholder.typicode.com/posts')
         .then(response => response.json())
-        .then(function(response){                 
+        .then(function(response){
             for (var u = 0; u < responseUsers.length; u++) {
             for (var i = 0; i < response.length; i++) {
                 if(responseUsers[u].id == response[i].userId){
