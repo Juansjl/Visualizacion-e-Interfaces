@@ -297,7 +297,7 @@ footer .logo{
   float: left;
   width: 200px;
   height: 35px;
-  margin-top: 10px;;
+  margin-top: 10px;
   margin-left: 10px;
 }
 footer ul li a{
@@ -352,3 +352,68 @@ footer ul li{
   width: 250px;
   margin-bottom: 15px;
 }
+
+.offer1{
+  background-image: url('images/portada1.jpg');
+}
+.offer2{
+  background-image: url('images/quake4.jpg');
+}
+.offer3{
+  background-image: url('images/C2Quake4.jpg');
+}
+.offer4{
+  background-image: url('images/portada4.jpg');
+}
+.oferta{
+  border-style: solid;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 250px;
+  width: 245px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.howmuch{
+  background-color: #8BB006;
+  text-align: center;
+  color:white;
+  margin-top: 100%;
+  margin-left: 70%;
+}
+/*animation */
+@keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+#spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+
+  }
+  #spinner:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
