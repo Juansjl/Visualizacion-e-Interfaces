@@ -472,3 +472,14 @@ footer ul li{
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
   }
+/* animacion miniatura*/
+#miniatura:hover{
+  transform: scale(1.1);
+}
+.oferta:hover{
+  transform: scale(1.1);
+}
+.grow:hover{
+  transform: scale(1.1);
+}
+/* fin animacion*/
