@@ -34,14 +34,14 @@ nav ul li a{
 }
 
 .withOutDeco a{
-  color: inherit;  
+  color: inherit;
   text-decoration:none;
   cursor:pointer;
   padding: 0px;
 }
 
 .withOutDeco a:hover{
-    color: inherit;  
+    color: inherit;
     text-decoration:none;
     cursor:pointer;
     }
@@ -53,7 +53,7 @@ a{
 
 a:hover
   {
-    color: gray; 
+    color: gray;
     text-decoration:none;
     cursor:pointer;
 }
@@ -432,18 +432,43 @@ footer ul li{
   margin-right: 1px;
   color:white;
 }
-#miniatura{
+/* miniaturas fliping */
+/* #miniatura{
   border-style: solid;
   height: 250px;
   width: 250px;
   margin-bottom: 15px;
+} */
+.miniatura{ width:250px; height:250px; margin-bottom:15px;}
+.miniatura .front{
+  position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:; width:250px; height:250px;border-style:solid;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.miniatura .back{
+  position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:250px; height:250px;border-style:solid;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.miniatura:hover .front{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.miniatura:hover  .back{
+	transform: perspective( 600px ) rotateY( 0deg );
 }
 
+/* ewnd of fliping */
+
 .offer1{
-  background-image: url('images/portada1.jpg');
+    background-image: url('images/quake4.jpg');
 }
 .offer2{
-  background-image: url('images/quake4.jpg');
+
+    background-image: url('images/portada1.jpg');
 }
 .offer3{
   background-image: url('images/teamarena.jpg');
@@ -453,11 +478,8 @@ footer ul li{
 }
 .oferta{
   border-style: solid;
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 260px;
-  width: 255px;
-  margin-bottom: 15px;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -503,13 +525,12 @@ footer ul li{
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
   }
-/* animacion miniatura*/
-#miniatura:hover{
-  transform: scale(1.1);
-}
+/* animacion miniatura
+
 .oferta:hover{
   transform: scale(1.1);
 }
+*/
 .grow:hover{
   transform: scale(1.1);
 }
