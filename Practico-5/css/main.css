@@ -674,6 +674,12 @@ ul li a .fa{
     text-align: center;
     font-size: 16px;
     color:black;
-
 }
-  
+
+.boxTitle p{
+    margin-top:10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size:16px;
+    text-align: justify;
+}
