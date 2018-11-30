@@ -163,6 +163,11 @@ nav .logo{
 .boxDescripText .descrip{
     padding-bottom: 35px;
 }
+.boxDescripText p{
+  font-size: 16px;
+  color:black;
+  text-align: justify;
+}
 
 .BoxDescrip h1{
     Color : white;
@@ -275,6 +280,8 @@ button{
 
 .topUsuarios p{
     text-align: center;
+    font-size: 16px;
+    color:black;
 
 }
 .topAvatares img{
@@ -340,6 +347,7 @@ button{
 
 .boxTitle{
     width: 65%;
+    height: 40px;
     margin-left: 7px;
     float: left;
     background-color: #495057;
@@ -347,9 +355,11 @@ button{
 }
 
 .boxTitle p{
-    padding-top: 15px;
+    margin-top:10px;
     padding-left: 10px;
     font-weight: bold;
+    font-size:16px;
+    text-align: justify;
 }
 
 .verMasC{
